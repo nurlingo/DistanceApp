@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		357E0D9B42289EF9C1C68BC9 /* Pods_DistanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C15B9BA0DA8088D6625188 /* Pods_DistanceApp.framework */; };
 		5C7E105923A044FE00B69D05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E105823A044FE00B69D05 /* AppDelegate.m */; };
 		5C7E105C23A044FE00B69D05 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E105B23A044FE00B69D05 /* SceneDelegate.m */; };
-		5C7E105F23A044FE00B69D05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E105E23A044FE00B69D05 /* ViewController.m */; };
+		5C7E105F23A044FE00B69D05 /* DistanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E105E23A044FE00B69D05 /* DistanceController.m */; };
 		5C7E106223A044FE00B69D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E106023A044FE00B69D05 /* Main.storyboard */; };
 		5C7E106423A0450100B69D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E106323A0450100B69D05 /* Assets.xcassets */; };
 		5C7E106723A0450100B69D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E106523A0450100B69D05 /* LaunchScreen.storyboard */; };
@@ -17,18 +18,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38C15B9BA0DA8088D6625188 /* Pods_DistanceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DistanceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7E105423A044FE00B69D05 /* DistanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7E105723A044FE00B69D05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C7E105823A044FE00B69D05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5C7E105A23A044FE00B69D05 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		5C7E105B23A044FE00B69D05 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		5C7E105D23A044FE00B69D05 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5C7E105E23A044FE00B69D05 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5C7E105D23A044FE00B69D05 /* DistanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistanceController.h; sourceTree = "<group>"; };
+		5C7E105E23A044FE00B69D05 /* DistanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DistanceController.m; sourceTree = "<group>"; };
 		5C7E106123A044FE00B69D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C7E106323A0450100B69D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C7E106623A0450100B69D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C7E106823A0450100B69D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C7E106923A0450100B69D05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9484BCA1C2264FDC4B17F360 /* Pods-DistanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceApp.release.xcconfig"; path = "Target Support Files/Pods-DistanceApp/Pods-DistanceApp.release.xcconfig"; sourceTree = "<group>"; };
+		ACEB2A61171C0F74F8BACE77 /* Pods-DistanceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceApp.debug.xcconfig"; path = "Target Support Files/Pods-DistanceApp/Pods-DistanceApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357E0D9B42289EF9C1C68BC9 /* Pods_DistanceApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E867D7A0FB6BA4F8773229E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACEB2A61171C0F74F8BACE77 /* Pods-DistanceApp.debug.xcconfig */,
+				9484BCA1C2264FDC4B17F360 /* Pods-DistanceApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5C7E104B23A044FE00B69D05 = {
 			isa = PBXGroup;
 			children = (
 				5C7E105623A044FE00B69D05 /* DistanceApp */,
 				5C7E105523A044FE00B69D05 /* Products */,
+				0E867D7A0FB6BA4F8773229E /* Pods */,
+				60D6CC5075AE1856F995A46A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,8 +81,8 @@
 				5C7E105823A044FE00B69D05 /* AppDelegate.m */,
 				5C7E105A23A044FE00B69D05 /* SceneDelegate.h */,
 				5C7E105B23A044FE00B69D05 /* SceneDelegate.m */,
-				5C7E105D23A044FE00B69D05 /* ViewController.h */,
-				5C7E105E23A044FE00B69D05 /* ViewController.m */,
+				5C7E105D23A044FE00B69D05 /* DistanceController.h */,
+				5C7E105E23A044FE00B69D05 /* DistanceController.m */,
 				5C7E106023A044FE00B69D05 /* Main.storyboard */,
 				5C7E106323A0450100B69D05 /* Assets.xcassets */,
 				5C7E106523A0450100B69D05 /* LaunchScreen.storyboard */,
@@ -76,6 +92,14 @@
 			path = DistanceApp;
 			sourceTree = "<group>";
 		};
+		60D6CC5075AE1856F995A46A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38C15B9BA0DA8088D6625188 /* Pods_DistanceApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C7E106D23A0450100B69D05 /* Build configuration list for PBXNativeTarget "DistanceApp" */;
 			buildPhases = (
+				B066079FB6E4418D067D6714 /* [CP] Check Pods Manifest.lock */,
 				5C7E105023A044FE00B69D05 /* Sources */,
 				5C7E105123A044FE00B69D05 /* Frameworks */,
 				5C7E105223A044FE00B69D05 /* Resources */,
+				452345B7A6E768EE9B7534C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,12 +167,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		452345B7A6E768EE9B7534C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DistanceApp/Pods-DistanceApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DistanceApp/Pods-DistanceApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DistanceApp/Pods-DistanceApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B066079FB6E4418D067D6714 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DistanceApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C7E105023A044FE00B69D05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C7E105F23A044FE00B69D05 /* ViewController.m in Sources */,
+				5C7E105F23A044FE00B69D05 /* DistanceController.m in Sources */,
 				5C7E105923A044FE00B69D05 /* AppDelegate.m in Sources */,
 				5C7E106A23A0450100B69D05 /* main.m in Sources */,
 				5C7E105C23A044FE00B69D05 /* SceneDelegate.m in Sources */,
@@ -287,6 +355,7 @@
 		};
 		5C7E106E23A0450100B69D05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACEB2A61171C0F74F8BACE77 /* Pods-DistanceApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +373,7 @@
 		};
 		5C7E106F23A0450100B69D05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9484BCA1C2264FDC4B17F360 /* Pods-DistanceApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
